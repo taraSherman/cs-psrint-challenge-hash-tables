@@ -23,11 +23,19 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+    A hashing function is any function that can be used to map arbitrarily-sized data to fixed-size values. It takes an input as a key, which is associated with a datum or record and used to identify it, and may be of fixed length, like an integer, or variable length, like a name. The output is a hash code used to index a hash table holding the data or records, or pointers to them.
+
 2. Collision resolution
+    Collision resolution, wherein two items hash to the same slot (the collision), is a systematic method  for placing the second item in the hash table, such as separate chaining, open addressing techniques, linear probing, etc.
+
 3. Performance of basic hash table operations
+    The average performance of hash table operations is constant time (O(1)). Worst-case scenarios, with more collisions, can result in performance of linear time (O(n)).
 4. Load factor
+    Load factor is the ratio of pieces of data to cells in the hash table, with the ideal load factor being 0.7, or 7 elements / 10 cells).
 5. Automatic resizing
+    Resizing of a hash table, while an expensive operation, can be useful if the hash table is either too large or too small for the data to be stored. In the first case, memory is wasted, while in the second, more memory would need to be allocated to accommodate the larger space required. Resizing can be set up to happen automatically whenever the load factor becomes wither too large or too small.
 6. Various use cases for hash tables
+    Hash tables are good whenever you want to store a large amount of data that can be searched quickly, such as a list of students at at a large school or university, which can have over 55,000 students. Using hash tables, a student record can be found very quickly by whatever key (name, ID, etc.). Duplicate elements can also be found if, for example, a student's record was mistakenly entered twice, the same ID was issued to more than one student, or more than one student has the same name. Hash tables are also used for caching, password authentication, error-checking, etc.
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
